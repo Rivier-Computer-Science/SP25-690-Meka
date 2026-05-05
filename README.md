@@ -18,24 +18,3 @@ Output:
 - No Accident
 
 Success will be measured using accuracy, precision, recall, F1-score, and confusion matrix. F1-score is the primary metric because it balances precision and recall. Recall is also very important because missing an accident can delay emergency response.
-
-## Dataset Description
-The dataset contains traffic scene images divided into two classes:
-
-- Accident
-- No_Accident
-
-The images represent real-world road scenes captured from traffic cameras or road environments. The dataset may include different lighting conditions, weather conditions, road types, camera angles, and traffic densities.
-
-Expected dataset structure:
-
-```text
-data/raw/
-├── Accident/
-│   ├── image1.jpg
-│   ├── image2.jpg
-│   └── ...
-└── No_Accident/
-    ├── image1.jpg
-    ├── image2.jpg
-    └── ...
