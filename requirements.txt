@@ -1,6 +1,9 @@
 numpy
 pandas
 scikit-learn
-torch
 matplotlib
+torch
+torchvision
+tqdm
 pyyaml
+pillow
