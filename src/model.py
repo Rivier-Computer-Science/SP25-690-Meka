@@ -1,1 +1,1 @@
-# Model architecture code
+print("Model defined")
