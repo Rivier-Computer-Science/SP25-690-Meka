@@ -1,1 +1,1 @@
-print("Training started...")
+print("Training model...")
