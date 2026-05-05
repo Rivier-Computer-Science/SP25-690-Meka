@@ -1,0 +1,5 @@
+seed: 42
+epochs: 10
+batch_size: 32
+learning_rate: 0.001
+model_path: models/best_model.pth
