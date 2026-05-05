@@ -1,1 +1,1 @@
-print("Prediction running...")
+print("Predicting single image...")
