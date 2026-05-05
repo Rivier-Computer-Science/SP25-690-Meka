@@ -1,1 +1,1 @@
-# Training script for the deep learning project
+print("Training started...")
