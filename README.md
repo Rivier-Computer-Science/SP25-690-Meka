@@ -1,20 +1,76 @@
-# Road Accident Detection Using Deep Learning
+# Road Accident Detection Using Deep Learning from Traffic Camera Images
 
 ## Project Overview
-This project detects road accidents from traffic camera images using deep learning. The system takes a road or traffic image as input and classifies it into one of two categories: Accident or No Accident.
-
-The main goal of this project is to support faster accident detection, improve traffic monitoring, and help emergency response teams respond more quickly.
+This project detects road accidents from traffic camera images using deep learning. The task is binary image classification: Accident vs No Accident.
 
 ## Problem Statement
-Road accidents can cause serious injuries, fatalities, traffic delays, and economic loss. In many cases, accident detection depends on manual monitoring or delayed reporting. This project addresses that problem by building an automated deep learning system that can classify traffic camera images as accident or no accident.
+The goal is to classify a traffic image as either Accident or No Accident. This is useful because faster accident detection can help emergency response and traffic monitoring.
 
-This is a supervised binary image classification task.
+## Dataset
+The dataset contains two folders:
 
-Input:
-- Traffic camera image
-
-Output:
 - Accident
-- No Accident
+- No_Accident
 
-Success will be measured using accuracy, precision, recall, F1-score, and confusion matrix. F1-score is the primary metric because it balances precision and recall. Recall is also very important because missing an accident can delay emergency response.
+The sample images are stored in:
+
+```text
+data/sample/Accident/
+data/sample/No_Accident/
+```
+
+## Models Used
+
+This project includes:
+
+- Logistic Regression baseline
+- Simple CNN
+- ResNet-18 transfer learning model
+
+## Evaluation Metrics
+
+The model is evaluated using:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion Matrix
+
+Recall and F1-score are important because missing an accident is risky.
+
+## Project Structure
+
+```text
+data/sample/Accident/       accident images
+data/sample/No_Accident/    no accident images
+notebooks/                  Google Colab notebook
+outputs/results/            metrics.csv
+outputs/figures/            confusion matrix and loss curve
+models/                     saved model
+reports/                    final report
+requirements.txt            dependencies
+README.md                   project instructions
+```
+
+## How to Run
+
+1. Open the notebook in Google Colab.
+2. Upload the dataset folders.
+3. Run all notebook cells.
+4. Download the output files.
+5. Upload results to GitHub under outputs.
+
+## Output Files
+
+The final output files are:
+
+```text
+outputs/results/metrics.csv
+outputs/figures/confusion_matrix.png
+outputs/figures/loss_curve.png
+```
+
+## Limitations
+
+This quick version uses a small sample dataset. A stronger final version should use more images, compare Logistic Regression, CNN, and ResNet-18, and include failure analysis.
