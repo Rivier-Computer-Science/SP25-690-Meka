@@ -1,1 +1,0 @@
-print("Predicting single image...")
